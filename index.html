@@ -5,15 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
 </head>
+
 <body>
     <header class="navbar">
+        <a href="#" class="navbar-logo">pizza<span>'s</span>
+        </a>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="navbar-nav">
+               <a href="#">Home</a>
+               <a href="#about">About Us</a>
+               <a href="#menu">Menu</a>
+               <a href="#contact">Contact</a>
+            </div>            
+
+            <div class="navbar-extra">
+                <a href="#" id="search"><i data-feather="search"></i></a>
+                <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+                <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+            </div>
+
         </nav>
     </header>
     <main class="content">
@@ -34,8 +48,16 @@
             </form>
         </section>
     </main>
+
+    <script>
+        feather.replace();
+      </script>
+
+      <script src="js/script.js"></script>
+      
     <footer class="footer">
         Revou Medan 24
     </footer>
 </body>
+
 </html>
