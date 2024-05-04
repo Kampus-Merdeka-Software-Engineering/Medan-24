@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Pizza</title>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="A minimal and responsive HTML5 landing page built on lightweight, clean and customizable code.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon-precomposed" href="media/logopizza.png">
+    <link rel="icon" href="media/logopizza.png">
+    <link rel="mask-icon" href="media/pizza.svg" color="rgb(36,38,58)">
+    <link rel="shortcut icon" href="media/logopizza.png">
     <link rel="stylesheet" href="style.css">
-    <title>Dashboard</title>
+    
 
     <script src="https://unpkg.com/feather-icons"></script>
 
 </head>
+
 
 <body>
     <header class="navbar">
@@ -27,12 +35,65 @@
                 <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
                 <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
             </div>
-
         </nav>
+        
     </header>
     <main class="content">
+
+        <section class="bg-image-hero center-tablet dark overlay-hero">
+            <div class="full-screen -margin-bottom middle padding padding-top-tablet">
+              <div class="row max-width-l">
+                <div class="col-one-half middle">
+                  <div>
+                    <h1 class="hero">Pizza'S</h1>
+                    <p class="lead">Pizza's merupakan sebuah restoran yang menghadirkan berbagai macam menu italian pizza</p>
+                    <a href="signup.html" class="button button-primary space-top" role="button">Mulai</a>
+                  </div>
+                </div>
+                <div class="col-one-half middle">
+                  <img src="logopizza.png" alt="Pizza'S">
+                </div>
+              </div>
+            </div>
+            <section class="bg-gradient-light padding">
+                <div class="center max-width-l">
+                  <h4>Pizza Menus</h4>
+                  <!-- <p class="paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus.</p> -->
+                </div>
+                <div class="row margin-top">
+                  <div class="col-one-fourth card card-content center">
+                    <!-- <p class="muted">Step 1</p> -->
+                    <h5>Classic</h5>
+                    <p>The Classic Deluxe Pizza</p>
+                  </div>
+                  <div class="col-one-fourth card card-content center">
+                    <!-- <p class="muted">Step 2</p> -->
+                    <h5>Supreme</h5>
+                    <p>The Supreme</p>
+                  </div>
+                  <div class="col-one-fourth card card-content center">
+                    <!-- <p class="muted">Step 3</p> -->
+                    <h5>Chicken</h5>
+                    <p>The Chicken Deluxe</p>
+                  </div>
+                  <div class="col-one-fourth card card-content center">
+                    <!-- <p class="muted">Step 3</p> -->
+                    <h5>Veggle</h5>
+                    <p>The Veggle.</p>
+                  </div>
+                  <div class="col-one-fourth card card-content center">
+                    <!-- <p class="muted">Step 4</p> -->
+                    <h5>Size</h5>
+                    <p>S, M, L, XL, XXL </p>
+                  </div>
+                </div>
+                <!-- <div class="center margin-top max-width-l">
+                  <span class="muted">If you need any help, make sure to </span><a href="signup.html">book a demo</a><span class="muted">.</span>
+                </div> -->
+              </section>
+
         <section class="dashboard">
-            <h1>Dashboard</h1>
+            <h3>Order Now</h3>
             <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name"><br><br>
