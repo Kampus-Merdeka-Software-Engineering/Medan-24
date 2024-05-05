@@ -1865,55 +1865,62 @@ form .form-help {
   grid-template-rows: 70px 70px 70px 70px 150px;
   grid-template-columns: 7fr 5fr 5fr 1fr 4fr 1fr 1fr;
   gap: 7px;
-  border: 1px solid #ccc;
 }
 
 .item1 {
   grid-row: 1 / 5;
   grid-column: 1 / 5;
   border: 1px solid #000000;
+  border-radius: 8px;
 }
 
 .item2 {
   grid-row: 1 / 2;
   grid-column: 5 / 10;
   border: 1px solid #000000;
+  border-radius: 8px;
 }
 
 .item3 {
   grid-row: 2 / 3;
   grid-column: span 5;
   border: 1px solid #000000;
+  border-radius: 8px;
 }
 
 .item4 {
   grid-row: 3 / 3;
   grid-column: span 5;
   border: 1px solid #000000;
+  border-radius: 8px;
 }
 
 .item5 {
   grid-row: 4 / 4;
   grid-column: span 5;
   border: 1px solid #000000;
+  border-radius: 8px;
 }
 
 .item6 {
   grid-row: 6 / 5;
   grid-column: span 1;
   border: 1px solid #000000;
+  border-radius: 8px;
 }
 
 .item7 {
   grid-row: 6 / 5;
   grid-column: span 3;
   border: 1px solid #000000;
+  border-radius: 8px;
 }
 
 .item8 {
   grid-row: 6 / 5;
   grid-column: span 5;
   border: 1px solid #000000;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 768px) {
