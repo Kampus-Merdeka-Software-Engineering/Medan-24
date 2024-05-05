@@ -1860,6 +1860,10 @@ form .form-help {
   color: #fff;
 }
 
+/* ------------------------------------------- */
+/* Adding Grid Layout and Style for the chart */
+/* ----------------------------------------- */
+
 .grid-container {
   display: grid;
   grid-template-rows: 70px 70px 70px 70px 150px;
