@@ -1,0 +1,36 @@
+/* Content styles */
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  .dashboard {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .dashboard form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dashboard label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .dashboard input,
+  .dashboard select {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }

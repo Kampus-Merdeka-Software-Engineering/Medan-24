@@ -1,0 +1,120 @@
+/* Navbar styles */
+.navbar {
+    background-color: #5a7492;
+    padding: 1rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .navbar .navbar-logo span {
+    color: #b12e2e;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+  }
+  
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: #333;
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #333;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  .navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: #333;
+  }
+  
+  #hamburger-menu {
+    display: none;
+  }
+
+  @media (max-width: 1366px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 62, 5%;
+    }
+  
+    .navbar-extra {
+      display: flex;
+      align-items: center;
+  }
+  
+  .navbar-icons {
+      display: flex;
+      align-items: center;
+  }
+  
+  #hamburger-menu {
+      display: flex;
+      cursor: pointer;
+      color: white;
+      margin-left: auto; /* Menggeser ikon hamburger ke ujung kanan */
+  }
+  
+  #hamburger-menu:hover {
+      color: #333;
+  }
+  
+  .navbar .navbar-nav {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #5a7492;
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      width: 100%;
+      padding: 1rem 0;
+  }
+  
+  .navbar .navbar-nav.show {
+      display: flex;
+  }
+  
+  .navbar .navbar-nav a {
+      margin: 1rem;
+  }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  
+    #hamburger-menu {
+      display: inline-block;
+    }
+  }
