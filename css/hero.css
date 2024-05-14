@@ -1,0 +1,84 @@
+.hero-image {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  right: 0;
+}
+
+.hero-text {
+  margin-left: 100px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+}
+
+.hero-text p {
+  font-size: 20px;
+}
+
+.hero-text button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #030037;
+  border-radius: 15px;
+  border: 2px solid #030037;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-image {
+    justify-content: center; /* Pusatkan konten pada layar kecil */
+    top: 0;
+    right: 0;
+  }
+
+  .hero-text {
+    margin-left: 0; /* Hapus margin kiri */
+    text-align: center; /* Teks berada di tengah */
+  }
+
+  .hero-text h1 {
+    font-size: 36px; /* Ubah ukuran font */
+  }
+
+  .hero-text p {
+    font-size: 16px; /* Ubah ukuran font */
+    padding: 10px;
+  }
+
+  .hero-text button {
+    font-size: 16px; /* Ubah ukuran font */
+  }
+}
+
+/* Responsif untuk layar yang sangat kecil */
+@media screen and (max-width: 450px) {
+  .hero-text h1 {
+    font-size: 28px; /* Ubah ukuran font */
+  }
+
+  .hero-text p {
+    font-size: 14px; /* Ubah ukuran font */
+  }
+
+  .hero-text button {
+    font-size: 14px; /* Ubah ukuran font */
+    padding: 8px 16px; /* Sesuaikan padding */
+  }
+}
