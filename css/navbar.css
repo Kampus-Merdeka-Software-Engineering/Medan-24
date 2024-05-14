@@ -34,7 +34,7 @@
     content: "";
     display: block;
     padding-bottom: 0.5rem;
-    border-bottom: 0.1rem solid #333;
+    /* border-bottom: 0.1rem solid #333; */
     transform: scaleX(0);
     transition: 0.2s linear;
   }
@@ -42,6 +42,9 @@
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.5);
   }
+  
+  /* display none untuk desktop */
+  /* display block untuk mobile */
   
   .navbar .navbar-extra a {
     color: #fff;
