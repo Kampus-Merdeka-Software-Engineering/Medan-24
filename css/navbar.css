@@ -67,6 +67,51 @@ i {
   display: inline;
 }
 
+.search-container {
+  display: none;
+  position: fixed;
+  top: 4rem; /* Sesuaikan dengan tinggi navbar Anda */
+  left: 0;
+  z-index: 999; /* Pastikan input pencarian tampil di atas konten lain */
+  width: 100%;
+  padding: 2rem;
+  background-color: #5a7492; /* Warna background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease forwards;
+}
+
+#search-input {
+  width: calc(
+    100% - 1rem
+  ); /* Lebar input adalah 100% lebar container dikurangi padding */
+  border: none;
+  border-bottom: 2px solid #fff; /* Garis bawah */
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  background-color: #5a7492; /* Warna background */
+  color: #fff; /* Warna teks input */
+}
+
+#search-input::placeholder {
+  color: #fff; /* Warna teks placeholder */
+}
+
+/* Tampilkan input pencarian saat tombol pencarian diklik */
+.show-search {
+  display: block;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 1366px) {
   html {
     font-size: 75%;
@@ -121,11 +166,20 @@ i {
 
   .label {
     display: inline;
-}
+  }
 
-i {
+  i {
     display: none;
-}
+  }
+
+  .search-container {
+    padding: 1rem;
+    top: 31rem; /* Ubah padding untuk layar yang lebih kecil */
+  }
+
+  #search-input {
+    font-size: 0.8rem; /* Ubah ukuran font untuk layar yang lebih kecil */
+  }
 }
 
 @media (max-width: 450px) {
@@ -138,9 +192,9 @@ i {
   }
   .label {
     display: inline;
-}
+  }
 
-i {
+  i {
     display: none;
-}
+  }
 }

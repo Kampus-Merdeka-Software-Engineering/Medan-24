@@ -43,3 +43,7 @@ function toggleMenu() {
   var navbarNav = document.querySelector('.navbar-nav');
   navbarNav.classList.toggle('show');
 }
+
+document.getElementById("search").addEventListener("click", function() {
+  document.getElementById("search-container").classList.toggle("show-search");
+});
