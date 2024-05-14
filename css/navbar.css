@@ -92,7 +92,7 @@ i {
     display: flex;
     cursor: pointer;
     color: white;
-    margin-left: auto; /* Menggeser ikon hamburger ke ujung kanan */
+    margin-left: auto;
   }
 
   #hamburger-menu:hover {
