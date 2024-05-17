@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Pizza</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A minimal and responsive HTML5 landing page built on lightweight, clean and customizable code."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon-precomposed" href="media/logopizza.png" />
+    <link rel="icon" href="media/logopizza.png" />
+    <link rel="mask-icon" href="media/pizza.svg" color="rgb(36,38,58)" />
+    <link rel="shortcut icon" href="media/logopizza.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
-<head>
-  <title>Pizza</title>
-  <meta charset="UTF-8">
-  <meta name="description"
-    content="A minimal and responsive HTML5 landing page built on lightweight, clean and customizable code.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon-precomposed" href="media/logopizza.png">
-  <link rel="icon" href="media/logopizza.png">
-  <link rel="mask-icon" href="media/pizza.svg" color="rgb(36,38,58)">
-  <link rel="shortcut icon" href="media/logopizza.png">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/navbar.css">
-  <link rel="stylesheet" href="./css/hero.css">
-  <link rel="stylesheet" href="./css/content.css">
-  <link rel="stylesheet" href="./css/grid.css">
-  <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
 
-
-  <script src="https://unpkg.com/feather-icons"></script>
-
-</head>
-
-
-<body>
-  <header class="navbar">
-    <a href="#" class="navbar-logo">pizza<span>'s</span>
-    </a>
-    <nav>
-      <div class="navbar-nav">
-        <a href="#">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Contact</a>
-        <a href="#" id="search" data-label="Search">
-          <i data-feather="search"></i><span class="label">Search</span>
-        </a>
-        <a href="#" id="shopping-cart" data-label="Cart">
-          <i data-feather="shopping-cart"></i><span class="label">Cart</span>
-        </a>
-      </div>
-      <div id="hamburger-menu" onclick="toggleMenu()">
-        <i data-feather="menu"></i>
-      </div>
-    </nav>
-  </header>
-  <div id="search-container" class="search-container">
-    <input type="text" id="search-input" placeholder="Cari disini...">
-  </div>
-
-  <div class="hero-image">
-    <div class="hero-text">
-      <h1>Pizza'S</h1>
-      <p>Pizza's merupakan sebuah restoran yang menghadirkan berbagai macam menu italian pizza</p>
-      <button>Mulai</button>
+  <body>
+    <header class="navbar">
+      <a href="#" class="navbar-logo">pizza<span>'s</span> </a>
+      <nav>
+        <div class="navbar-nav">
+          <a href="#">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Contact</a>
+          <a href="#" id="search" data-label="Search">
+            <i data-feather="search"></i><span class="label">Search</span>
+          </a>
+          <a href="#" id="shopping-cart" data-label="Cart">
+            <i data-feather="shopping-cart"></i><span class="label">Cart</span>
+          </a>
+        </div>
+        <div id="hamburger-menu" onclick="toggleMenu()">
+          <i data-feather="menu"></i>
+        </div>
+      </nav>
+    </header>
+    <div id="search-container" class="search-container">
+      <input type="text" id="search-input" placeholder="Cari disini..." />
     </div>
-  </div>
 
-  <!-- Main Content Start Here -->
-  <main class="content">
-    <!-- <section class="bg-image-hero center-tablet dark overlay-hero">
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Pizza'S</h1>
+        <p>
+          Pizza's merupakan sebuah restoran yang menghadirkan berbagai macam
+          menu italian pizza
+        </p>
+        <button>Mulai</button>
+      </div>
+    </div>
+
+    <!-- Main Content Start Here -->
+    <main class="content">
+      <!-- <section class="bg-image-hero center-tablet dark overlay-hero">
       <div class="full-screen -margin-bottom middle padding padding-top-tablet">
         <div class="row max-width-l">
           <div class="col-one-half middle">
@@ -105,7 +105,7 @@
           <div class="col-one-fourth card card-content center">
             <!-- <p class="muted">Step 4</p> -->
             <h5>Size</h5>
-            <p>S, M, L, XL, XXL </p>
+            <p>S, M, L, XL, XXL</p>
           </div>
         </div>
         <!-- <div class="center margin-top max-width-l">
@@ -126,18 +126,30 @@
           <div class="item8">bar chart</div>
         </div>
       </section>
-  </main>
-  <!-- Main Content End Here -->
+    </main>
+    <!-- Main Content End Here -->
 
-  <script>
-    feather.replace();
-  </script>
+    <script>
+      function fetchJSONData() {
+        fetch("./json/monthly_revenue.json")
+          .then((Response) => {
+            if (!Response.ok) {
+              throw new Error(`HTTP error: ${Response.status}`);
+            }
+            return Response.json();
+          })
+          .then((data) => console.log(data))
+          .catch((error) => console.error("Unable to fetch JSON data:", error));
+      }
+      fetchJSONData();
+    </script>
 
-  <script src="js/script.js"></script>
+    <script>
+      feather.replace();
+    </script>
 
-  <footer class="footer">
-    Revou Medan 24
-  </footer>
-</body>
+    <script src="js/script.js"></script>
 
+    <footer class="footer">Revou Medan 24</footer>
+  </body>
 </html>
