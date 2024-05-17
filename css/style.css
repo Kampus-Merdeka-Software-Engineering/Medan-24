@@ -1693,3 +1693,28 @@ form .form-help {
     padding: 1.5rem;
   }
 }
+
+/* -----------------------------------------------------------------------------
+
+Menus
+
+----------------------------------------------------------------------------- */
+
+.image-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.image-carousel img {
+  width: 200px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .image-carousel img {
+    height: 10rem; /* Reduced height */
+  }
+}

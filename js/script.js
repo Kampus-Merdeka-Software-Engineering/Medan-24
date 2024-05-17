@@ -52,3 +52,15 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById("search").addEventListener("click", function() {
   document.getElementById("search-container").classList.toggle("show-search");
 });
+
+// carousel menu
+
+$(document).ready(function(){
+  $('.image-carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.image-carousel-nav'
+  });
+});
