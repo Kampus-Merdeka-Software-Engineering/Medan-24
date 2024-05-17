@@ -120,7 +120,7 @@ i {
 
 @media (max-width: 768px) {
   html {
-    font-size: 62, 5%;
+    font-size: 62.5%; /* Pastikan formatnya benar */
   }
 
   .navbar-extra {
@@ -154,6 +154,7 @@ i {
     left: 0;
     width: 100%;
     padding: 1rem 0;
+    z-index: 1000;
   }
 
   .navbar .navbar-nav.show {
@@ -174,11 +175,11 @@ i {
 
   .search-container {
     padding: 1rem;
-    top: 31rem; /* Ubah padding untuk layar yang lebih kecil */
+    top: 31rem;
   }
 
   #search-input {
-    font-size: 0.8rem; /* Ubah ukuran font untuk layar yang lebih kecil */
+    font-size: 0.8rem;
   }
 }
 
@@ -190,6 +191,7 @@ i {
   #hamburger-menu {
     display: inline-block;
   }
+
   .label {
     display: inline;
   }

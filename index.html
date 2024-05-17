@@ -129,27 +129,9 @@
     </main>
     <!-- Main Content End Here -->
 
-    <script>
-      function fetchJSONData() {
-        fetch("./json/monthly_revenue.json")
-          .then((Response) => {
-            if (!Response.ok) {
-              throw new Error(`HTTP error: ${Response.status}`);
-            }
-            return Response.json();
-          })
-          .then((data) => console.log(data))
-          .catch((error) => console.error("Unable to fetch JSON data:", error));
-      }
-      fetchJSONData();
-    </script>
-
-    <script>
-      feather.replace();
-    </script>
-
-    <script src="js/script.js"></script>
-
     <footer class="footer">Revou Medan 24</footer>
+    
+    <script src="./js/data.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
