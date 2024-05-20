@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Pizza</title>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="A minimal and responsive HTML5 landing page built on lightweight, clean and customizable code."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon-precomposed" href="media/logopizza.png" />
-    <link rel="icon" href="media/logopizza.png" />
-    <link rel="mask-icon" href="media/pizza.svg" color="rgb(36,38,58)" />
-    <link rel="shortcut icon" href="media/logopizza.png" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/hero.css" />
-    <link rel="stylesheet" href="./css/content.css" />
-    <link rel="stylesheet" href="./css/grid.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="https://unpkg.com/feather-icons"></script>
-  </head>
+<head>
+  <title>Pizza</title>
+  <meta charset="UTF-8" />
+  <meta name="description"
+    content="A minimal and responsive HTML5 landing page built on lightweight, clean and customizable code." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon-precomposed" href="media/logopizza.png" />
+  <link rel="icon" href="media/logopizza.png" />
+  <link rel="mask-icon" href="media/pizza.svg" color="rgb(36,38,58)" />
+  <link rel="shortcut icon" href="media/logopizza.png" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/hero.css" />
+  <link rel="stylesheet" href="./css/content.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <link rel="stylesheet" href="./css/table.css">
+  <link rel="stylesheet" href="./css/chart.css">
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <body>
-    <header class="navbar">
-      <a href="#" class="navbar-logo">pizza<span>'s</span> </a>
-      <nav>
-        <div class="navbar-nav">
-          <a href="#">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#menu">Menu</a>
-          <a href="#contact">Contact</a>
-          <a href="#" id="search" data-label="Search">
-            <i data-feather="search"></i><span class="label">Search</span>
-          </a>
-          <a href="#" id="shopping-cart" data-label="Cart">
-            <i data-feather="shopping-cart"></i><span class="label">Cart</span>
-          </a>
-        </div>
-        <div id="hamburger-menu" onclick="toggleMenu()">
-          <i data-feather="menu"></i>
-        </div>
-      </nav>
-    </header>
-    <div id="search-container" class="search-container">
-      <input type="text" id="search-input" placeholder="Cari disini..." />
-    </div>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
 
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1>Pizza'S</h1>
-        <p>
-          Pizza's merupakan sebuah restoran yang menghadirkan berbagai macam
-          menu italian pizza
-        </p>
-        <button>Mulai</button>
+<body>
+  <header class="navbar">
+    <a href="#" class="navbar-logo">pizza<span>'s</span> </a>
+    <nav>
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+        <a href="#" id="search" data-label="Search">
+          <i data-feather="search"></i><span class="label">Search</span>
+        </a>
+        <a href="#" id="shopping-cart" data-label="Cart">
+          <i data-feather="shopping-cart"></i><span class="label">Cart</span>
+        </a>
       </div>
-    </div>
+      <div id="hamburger-menu" onclick="toggleMenu()">
+        <i data-feather="menu"></i>
+      </div>
+    </nav>
+  </header>
+  <div id="search-container" class="search-container">
+    <input type="text" id="search-input" placeholder="Cari disini..." />
+  </div>
 
-    <!-- Main Content Start Here -->
-    <main class="content">
-      <!-- <section class="bg-image-hero center-tablet dark overlay-hero">
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Pizza'S</h1>
+      <p>
+        Pizza's merupakan sebuah restoran yang menghadirkan berbagai macam
+        menu italian pizza
+      </p>
+      <button>Mulai</button>
+    </div>
+  </div>
+
+  <!-- Main Content Start Here -->
+  <main class="content">
+    <!-- <section class="bg-image-hero center-tablet dark overlay-hero">
       <div class="full-screen -margin-bottom middle padding padding-top-tablet">
         <div class="row max-width-l">
           <div class="col-one-half middle">
@@ -80,48 +84,106 @@
         </div>
       </div> -->
 
-      <section class="bg-gradient-light padding">
-        <div class="center max-width-l">
-          <h4>Pizza Menus</h4>
-          <!-- <p class="paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus.</p> -->
-          <div class="tranding-slide">
-            <div class="tranding-slide-img">
-              <div class="image-carousel">
-                <img src="img/pizza-menu1.jpg" alt="Tranding">
-                <img src="img/pizza-menu2.jpg" alt="Tranding">
-                <img src="img/pizza-menu3.jpg" alt="Tranding">
-                <img src="img/pizza-menu4.jpg" alt="Tranding">
-                <img src="img/pizza-menu5.jpg" alt="Tranding">
-                <img src="img/pizza-menu6.jpg" alt="Tranding">
-              </div>
+    <section class="bg-gradient-light padding">
+      <div class="center max-width-l">
+        <h4>Pizza Menus</h4>
+        <!-- <p class="paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus.</p> -->
+        <div class="tranding-slide">
+          <div class="tranding-slide-img">
+            <div class="image-carousel">
+              <img src="img/pizza-menu1.jpg" alt="Tranding">
+              <img src="img/pizza-menu2.jpg" alt="Tranding">
+              <img src="img/pizza-menu3.jpg" alt="Tranding">
+              <img src="img/pizza-menu4.jpg" alt="Tranding">
+              <img src="img/pizza-menu5.jpg" alt="Tranding">
+              <img src="img/pizza-menu6.jpg" alt="Tranding">
             </div>
           </div>
-        
-        </section>
-        <!-- <div class="center margin-top max-width-l">
+        </div>
+
+    </section>
+    <!-- <div class="center margin-top max-width-l">
                   <span class="muted">If you need any help, make sure to </span><a href="signup.html">book a demo</a><span class="muted">.</span>
                 </div> -->
-      </section>
+    </section>
 
-      <section class="dashboard">
-        <h3>Dashboard</h3>
-        <div class="grid-container">
-          <div class="item1">monthly revenue</div>
-          <div class="item2">score card</div>
-          <div class="item3">score card</div>
-          <div class="item4">score card</div>
-          <div class="item5">score card</div>
-          <div class="item6">pie chart</div>
-          <div class="item7">table</div>
-          <div class="item8">bar chart</div>
+    <section class="dashboard">
+      <h3>Dashboard Pizza Sales 2015</h3>
+      <div class="chart-scorecard-container">
+        <div class="chart-container">
+          <div class="canvas-wrapper">
+            <h2>Monthly Revenue</h2>
+            <canvas id="canvas" height="410"></canvas>
+          </div>
         </div>
-      </section>
-    </main>
-    <!-- Main Content End Here -->
+        <div class="scorecard-container">
+          <div class="scorecard">
+            <h3>Total Revenue</h3>
+            <p>$817,839</p>
+          </div>
+          <div class="scorecard">
+            <h3>Total Orders</h3>
+            <p>21,350</p>
+          </div>
+          <div class="scorecard">
+            <h3>Total Sold Out Products</h3>
+            <p>49,574</p>
+          </div>
+          <div class="scorecard">
+            <h3>Average Order Value</h3>
+            <p>$38</p>
+          </div>
+        </div>
+      </div>
+      <div class="additional-charts-container">
+        <div class="additional-chart">
+          <div class="canvas-wrapper">
+            <h2>Most Category</h2>
+            <canvas id="pieChart"></canvas>
+          </div>
+        </div>
+        <div class="additional-chart">
+          <div class="canvas-wrapper">
+            <div class="table-container">
+              <h2>Most Ordered Pizza</h2>
+              <table id="data-table">
+                <thead>
+                  <tr>
+                    <th>Pizza Name</th>
+                    <th>Total Order</th>
+                    <th>Revenue</th>
+                  </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+              </table>
+            </div>
+            <div class="pagination">
+              <button id="prev" onclick="prevPage()"><i class="fa-solid fa-angle-left"></i></i></button>
+              <span id="page-info"></span>
+              <button id="next" onclick="nextPage()"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="additional-chart">
+          <div class="canvas-wrapper">
+            <h2>Most Ordered Size</h2>
+            <canvas id="barChart" height="300"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Main Content End Here -->
 
-    <footer class="footer">Revou Medan 24</footer>
-    
-    <script src="./js/data.js"></script>
-    <script src="./js/script.js"></script>
-  </body>
+  <footer class="footer">Revou Medan 24</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/barchart.js"></script>
+  <script src="./js/piechart.js"></script>
+  <script src="./js/chart.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

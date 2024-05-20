@@ -1,0 +1,74 @@
+.chart-scorecard-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.chart-container {
+    width: 4000px;
+    margin-right: 2rem;
+}
+
+.chart-container h2 {
+    font-size: 25px;
+    text-align: center;
+    /* padding: 0.5rem; */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.canvas-wrapper {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container #canvas {
+    width: 100%;
+}
+
+.scorecard-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.scorecard {
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.scorecard h3 {
+    font-size: 20px;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.scorecard p {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+.additional-charts-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.additional-chart {
+    width: 32%;
+}
+
+.additional-chart .canvas-wrapper h2{
+    font-size: 25px;
+    text-align: center;
+    /* padding: 0.5rem; */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}

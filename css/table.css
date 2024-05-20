@@ -1,0 +1,65 @@
+.additional-chart .canvas-wrapper .table-container h2 {
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.additional-chart .canvas-wrapper .table-container table {
+    width: 420px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.additional-chart .canvas-wrapper .table-container th, td {
+    padding: 8.25px;
+    text-align: left;
+}
+
+.additional-chart .canvas-wrapper .table-container th {
+    background-color: #87CEEB;
+    text-align: left;
+}
+
+.additional-chart .canvas-wrapper .table-container tbody tr:nth-of-type(even) {
+    background-color: #E0FFFF;
+}
+
+.additional-chart .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.additional-chart .pagination span {
+    margin-top: 8px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 13px;
+}
+
+.additional-chart .pagination button {
+    margin: 0 5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #030037;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 40px;
+}
+
+.additional-chart .pagination button.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
