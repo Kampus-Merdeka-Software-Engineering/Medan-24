@@ -1,0 +1,101 @@
+{
+  "pizzas": [
+    {
+      "Category": "Classic",
+      "Pizza_Name": "The Hawaiian Pizza"
+    }, {
+      "Category": "Classic",
+      "Pizza_Name": "The Pepperoni, Mushroom, and Peppers Pizza"
+    }, {
+      "Category": "Classic",
+      "Pizza_Name": "The Big Meat Pizza"
+    }, {
+      "Category": "Veggie",
+      "Pizza_Name": "The Mexicana Pizza"
+    }, {
+      "Category": "Classic",
+      "Pizza_Name": "The Greek Pizza"
+    }, {
+      "Category": "Classic",
+      "Pizza_Name": "The Napolitana Pizza"
+    }, {
+      "Category": "Veggie",
+      "Pizza_Name": "The Vegetables + Vegetables Pizza"
+    }, {
+      "Category": "Classic",
+      "Pizza_Name": "The Classic Deluxe Pizza"
+    }, {
+      "Category": "Classic",
+      "Pizza_Name": "The Italian Capocollo Pizza"
+    }, {
+      "Category": "Veggie",
+      "Pizza_Name": "The Spinach and Feta Pizza"
+    }, {
+      "Category": "Veggie",
+      "Pizza_Name": "The Green Garden Pizza"
+    }, {
+      "Category": "Veggie",
+      "Pizza_Name": "The Mediterranean Pizza"
+    }, {
+      "Category": "Supreme",
+      "Pizza_Name": "The Italian Supreme Pizza"
+    }, {
+      "Category": "Classic",
+      "Pizza_Name": "The Pepperoni Pizza"
+    }, {
+      "Category": "Supreme",
+      "Pizza_Name": "The Prosciutto and Arugula Pizza"
+    }, {
+      "Category": "Supreme",
+      "Pizza_Name": "The Spicy Italian Pizza"
+    }, {
+      "Category": "Veggie",
+      "Pizza_Name": "The Spinach Pesto Pizza"
+    }, {
+      "Category": "Supreme",
+      "Pizza_Name": "The Soppressata Pizza"
+    }, {
+      "Category": "Supreme",
+      "Pizza_Name": "The Pepper Salami Pizza"
+    }, {
+      "Category": "Supreme",
+      "Pizza_Name": "The Spinach Supreme Pizza"
+    }, {
+      "Category": "Veggie",
+      "Pizza_Name": "The Italian Vegetables Pizza"
+    }, {
+      "Category": "Chicken",
+      "Pizza_Name": "The Barbecue Chicken Pizza"
+    }, {
+      "Category": "Chicken",
+      "Pizza_Name": "The Thai Chicken Pizza"
+    }, {
+      "Category": "Supreme",
+      "Pizza_Name": "The Sicilian Pizza"
+    }, {
+      "Category": "Supreme",
+      "Pizza_Name": "The Calabrese Pizza"
+    }, {
+      "Category": "Chicken",
+      "Pizza_Name": "The California Chicken Pizza"
+    }, {
+      "Category": "Chicken",
+      "Pizza_Name": "The Chicken Pesto Pizza"
+    }, {
+      "Category": "Chicken",
+      "Pizza_Name": "The Southwest Chicken Pizza"
+    }, {
+      "Category": "Chicken",
+      "Pizza_Name": "The Chicken Alfredo Pizza"
+    }, {
+      "Category": "Veggie",
+      "Pizza_Name": "The Four Cheese Pizza"
+    }, {
+      "Category": "Veggie",
+      "Pizza_Name": "The Five Cheese Pizza"
+    }, {
+      "Category": "Supreme",
+      "Pizza_Name": "The Brie Carre Pizza"
+    }
+  ]
+}

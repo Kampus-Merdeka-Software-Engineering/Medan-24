@@ -111,9 +111,36 @@
       <h3>Dashboard Pizza Sales 2015</h3>
       <div class="chart-scorecard-container">
         <div class="chart-container">
+          <div class="selectBox">
+            <select id="category">
+              <option style="display:none">Category</option>
+              <option>All</option>
+              <option>Classic</option>
+              <option>Supreme</option>
+              <option>Veggie</option>
+              <option>Chicken</option>
+            </select>
+          </div>
+          <div class="selectBox">
+            <select id="pizzaSelect">
+              <option style="display:none">Pizza Name</option>
+            </select>
+          </div>
+          <div class="selectBox">
+            <select id="pizzaSizeSelect">
+              <option style="display:none">Pizza Size</option>
+              <option>All</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+            </select>
+          </div>
+          <input type="month" id="selectDate">
           <div class="canvas-wrapper">
             <h2>Monthly Revenue</h2>
-            <canvas id="canvas" height="410"></canvas>
+            <canvas id="canvas" height="343"></canvas>
           </div>
         </div>
         <div class="scorecard-container">
@@ -179,6 +206,7 @@
   <footer class="footer">Revou Medan 24</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/pizzaname.js"></script>
   <script src="./js/barchart.js"></script>
   <script src="./js/piechart.js"></script>
   <script src="./js/chart.js"></script>

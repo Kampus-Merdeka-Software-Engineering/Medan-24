@@ -1,51 +1,51 @@
 {
   "monthly": [
     {
-      "month": "January",
+      "month": "January 2015",
       "total_revenue": "69793.299999999508"
     },
     {
-      "month": "February",
+      "month": "February 2015",
       "total_revenue": "65159.599999999758"
     },
     {
-      "month": "March",
+      "month": "March 2015",
       "total_revenue": "70397.0999999994"
     },
     {
-      "month": "April",
+      "month": "April 2015",
       "total_revenue": "68736.7999999995"
     },
     {
-      "month": "May",
+      "month": "May 2015",
       "total_revenue": "71402.749999999418"
     },
     {
-      "month": "June",
+      "month": "June 2015",
       "total_revenue": "68230.199999999459"
     },
     {
-      "month": "July",
+      "month": "July 2015",
       "total_revenue": "72557.899999999427"
     },
     {
-      "month": "August",
+      "month": "August 2015",
       "total_revenue": "68278.249999999476"
     },
     {
-      "month": "September",
+      "month": "September 2015",
       "total_revenue": "64180.049999999792"
     },
     {
-      "month": "October",
+      "month": "October 2015",
       "total_revenue": "64027.599999999744"
     },
     {
-      "month": "November",
+      "month": "November 2015",
       "total_revenue": "70395.349999999438"
     },
     {
-      "month": "December",
+      "month": "December 2015",
       "total_revenue": "64701.149999999747"
     }
   ]

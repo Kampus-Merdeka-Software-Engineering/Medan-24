@@ -35,3 +35,75 @@
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+
+  .selectBox,
+  input {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px; /* Menambahkan jarak kanan antara setiap selectBox */
+  }
+  
+  .selectBox:last-child {
+    margin-right: 0; /* Menghapus margin kanan pada selectBox terakhir */
+  }
+
+  .selectBox select,
+  input {
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 7px;
+  }
+
+  #category {
+    width: 250px;
+  }
+  
+  #pizzaSelect {
+    width: 450px;
+  }
+  
+  #pizzaSizeSelect {
+    width: 250px;
+  }
+
+  #selectDate {
+    width: 209px;
+    border-radius: 7px;
+  }
+  
+  .selectBox select:focus {
+    outline: none;
+  }
+  
+  .selectBox ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: auto;
+    z-index: 1;
+  }
+  
+  .selectBox ul li {
+    float: left;
+  }
+  
+  .selectBox ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .selectBox ul li:last-child a {
+    border-bottom: none;
+  }
+  
+  .selectBox ul li a:hover {
+    background-color: #f4f4f4;
+  }
+  
