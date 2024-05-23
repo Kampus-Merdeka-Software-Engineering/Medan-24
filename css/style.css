@@ -1788,7 +1788,7 @@ Menus Carousel
 
 .slider-scrollbar .scrollbar-thumb {
   position: absolute;
-  background: #000;
+  background: #f8f2f2;
   top: 0;
   bottom: 0;
   width: 50%;
@@ -1812,7 +1812,7 @@ Menus Carousel
 
 
 
-/*.image-carousel {
+/*.image-list {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -1821,18 +1821,18 @@ Menus Carousel
   -ms-overflow-style: none;
 }
 
-.image-carousel::-webkit-scrollbar {
+.image-list::-webkit-scrollbar {
   /*display: none;
 }
 
-.image-carousel img {
+.image-list img {
   width: 200px;
   scroll-snap-align: start;
   flex-shrink: 0;
 }
 
 @media (max-width: 480px) {
-  .image-carousel img {
+  .image-list img {
     height: 10rem; 
   }
 }
@@ -1848,4 +1848,5 @@ Menus Carousel
 .date-picker {
   width: 80px;
 }
+
 
