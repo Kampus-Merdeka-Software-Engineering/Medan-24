@@ -23,7 +23,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -41,12 +42,12 @@
         <a href="#about">About Us</a>
         <a href="#menu">Menu</a>
         <a href="#contact">Contact</a>
-        <a href="#" id="search" data-label="Search">
+        <!-- <a href="#" id="search" data-label="Search">
           <i data-feather="search"></i><span class="label">Search</span>
         </a>
         <a href="#" id="shopping-cart" data-label="Cart">
           <i data-feather="shopping-cart"></i><span class="label">Cart</span>
-        </a>
+        </a> -->
       </div>
       <div id="hamburger-menu" onclick="toggleMenu()">
         <i data-feather="menu"></i>
@@ -59,12 +60,13 @@
 
   <div class="hero-image">
     <div class="hero-text">
-      <h1>Pizza'S</h1>
+      <!-- <h1>Pizza'S</h1>
       <p>
         Pizza's merupakan sebuah restoran yang menghadirkan berbagai macam
         menu italian pizza
-      </p>
-      <button>Mulai</button>
+      </p> -->
+      <h1 id="greeting">Hallo.. nama panggilanmu siapa?</h1>
+      <input type="text" id="nameInput">
     </div>
   </div>
 
@@ -105,7 +107,7 @@
               <li><img class="image-item" src="img/2.jpg" alt="img-2" /></li>
               <li><img class="image-item" src="img/3.jpg" alt="img-3" /></li>
               <li><img class="image-item" src="img/4.jpg" alt="img-4" /></li>
-              <li><img class="image-item" src="img/5.jpg" alt="img-4" /></li> 
+              <li><img class="image-item" src="img/5.jpg" alt="img-4" /></li>
             </ul>
             <button id="next-slide" class="slide-button material-symbols-rounded">
               chevron_right
@@ -126,9 +128,9 @@
 
     <section class="dashboard">
       <h3>Dashboard Pizza Sales 2015</h3>
-      <input type="date" id="start-date">
+      <!-- <input type="date" id="start-date">
       <input type="date" id="end-date">
-      <button id="filter-button">OK</button>
+      <button id="filter-button">OK</button> -->
       <div class="chart-scorecard-container">
         <div class="chart-container">
           <div class="selectBox">
@@ -157,7 +159,9 @@
               <option>XXL</option>
             </select>
           </div>
-          <input type="month" id="selectDate">
+          <input type="date" id="start-date">
+          <input type="date" id="end-date">
+          <button id="filter-button">OK</button>
           <div class="canvas-wrapper">
             <h2>Monthly Revenue</h2>
             <canvas id="canvas" height="343"></canvas>
@@ -234,7 +238,28 @@
   <script src="./js/date.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/carousel.js"></script>
- 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Menangani event ketika tombol "Enter" ditekan pada input
+      document.getElementById("nameInput").addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          start();
+        }
+      });
+
+      function start() {
+        var name = document.getElementById("nameInput").value;
+        var greeting = document.getElementById("greeting");
+        if (name.trim() !== "") {
+          greeting.innerHTML = "<h1>Hallo... " + name + "," + "</h1><h3>Selamat datang di website dashboard Team Medan 24</h3>";
+          // Hapus input box setelah nama dimasukkan
+          document.getElementById("nameInput").style.display = "none";
+        }
+      }
+    });
+  </script>
+
 
 </body>
 

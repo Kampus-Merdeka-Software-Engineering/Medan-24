@@ -14,14 +14,28 @@
 .hero-text {
   margin-left: 100px;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-text h1 {
   font-size: 50px;
 }
 
-.hero-text p {
+input[type="text"] {
+  border: none;
+  border-bottom: 3px solid #fff; /* Garis bawah */
+  outline: none;
+  color: white;
+  background: transparent;
+  border-radius: 0;
   font-size: 20px;
+  margin-left: 5px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: normal;
 }
 
 .hero-text button {

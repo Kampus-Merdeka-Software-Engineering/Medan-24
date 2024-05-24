@@ -40,7 +40,7 @@
   input {
     position: relative;
     display: inline-block;
-    margin-right: 10px; /* Menambahkan jarak kanan antara setiap selectBox */
+    margin-right: 10px;
   }
   
   .selectBox:last-child {
@@ -58,7 +58,7 @@
   }
 
   #category {
-    width: 250px;
+    width: 150px;
   }
   
   #pizzaSelect {
@@ -66,12 +66,32 @@
   }
   
   #pizzaSizeSelect {
-    width: 250px;
+    width: 130px;
   }
 
-  #selectDate {
-    width: 209px;
+  #start-date {
+    width: 170px;
     border-radius: 7px;
+    margin-right: 10px;
+  }
+
+  #end-date {
+    width: 170px;
+    border-radius: 7px;
+    margin-right: 10px;
+  }
+  
+  #filter-button {
+    background: #030037;
+    color: white;
+    width: 60px;
+    height: 48px;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+
+  #filter-button:hover {
+    background: #050061;
   }
   
   .selectBox select:focus {
