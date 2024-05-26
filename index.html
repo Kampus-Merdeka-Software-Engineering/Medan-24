@@ -133,38 +133,56 @@
       <button id="filter-button">OK</button> -->
       <div class="chart-scorecard-container">
         <div class="chart-container">
-          <div class="selectBox">
-            <select id="category">
-              <option style="display:none">Category</option>
-              <option>All</option>
-              <option>Classic</option>
-              <option>Supreme</option>
-              <option>Veggie</option>
-              <option>Chicken</option>
-            </select>
+          <div class="form-group">
+            <label for="category">Category</label>
+            <div class="selectBox">
+              <select id="category">
+                <option style="display:none">Category</option>
+                <option>All</option>
+                <option>Classic</option>
+                <option>Supreme</option>
+                <option>Veggie</option>
+                <option>Chicken</option>
+              </select>
+            </div>
           </div>
-          <div class="selectBox">
-            <select id="pizzaSelect">
-              <option style="display:none">Pizza Name</option>
-            </select>
+          <div class="form-group">
+            <label for="pizzaSelect">Pizza Name</label>
+            <div class="selectBox">
+              <select id="pizzaSelect">
+                <option style="display:none">Pizza Name</option>
+                <option>The Hawaiian Pizza</option>
+              </select>
+            </div>
           </div>
-          <div class="selectBox">
-            <select id="pizzaSizeSelect">
-              <option style="display:none">Pizza Size</option>
-              <option>All</option>
-              <option>S</option>
-              <option>M</option>
-              <option>L</option>
-              <option>XL</option>
-              <option>XXL</option>
-            </select>
+          <div class="form-group">
+            <label for="pizzaSizeSelect">Pizza Size</label>
+            <div class="selectBox">
+              <select id="pizzaSizeSelect">
+                <option style="display:none">Pizza Size</option>
+                <option>All</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+              </select>
+            </div>
           </div>
-          <input type="date" id="start-date">
-          <input type="date" id="end-date">
-          <button id="filter-button">OK</button>
+          <div class="form-group">
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date" max="2015-12-31">
+          </div>
+          <div class="form-group">
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date" max="2015-12-31">
+          </div>
+          <div class="form-group">
+            <button id="filter-button">OK</button>
+          </div>
           <div class="canvas-wrapper">
             <h2>Monthly Revenue</h2>
-            <canvas id="canvas" height="343"></canvas>
+            <canvas id="canvas" height="308"></canvas>
           </div>
         </div>
         <div class="scorecard-container">
