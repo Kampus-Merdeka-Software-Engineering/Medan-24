@@ -158,4 +158,231 @@
     text-align: center;
     margin-bottom: 20px;
   }
+
   
+  /* Responsive Styles */
+@media (max-width: 1200px) {
+  .chart-scorecard-container {
+    flex-direction: column;
+  }
+
+  .chart-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .scorecard-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .scorecard {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .additional-charts-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .additional-chart {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .chart-scorecard-container {
+    flex-direction: column;
+  }
+
+  .chart-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .scorecard-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .scorecard {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .additional-charts-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .additional-chart {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .dashboard h3 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard input,
+  .dashboard select {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #start-date,
+  #end-date {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  #filter-button {
+    width: 100%;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .chart-scorecard-container {
+      flex-direction: column;
+  }
+
+  .chart-container {
+      width: 100%;
+      margin-bottom: 2rem;
+  }
+
+  .scorecard-container {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .scorecard {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  .additional-charts-container {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .additional-chart {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .chart-scorecard-container {
+      flex-direction: column;
+  }
+
+  .chart-container {
+      width: 100%;
+      margin-bottom: 2rem;
+  }
+
+  .scorecard-container {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .scorecard {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  .additional-charts-container {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .additional-chart {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  .dashboard h3 {
+      font-size: 1.5rem;
+  }
+
+  .dashboard input,
+  .dashboard select {
+      width: 100%;
+      margin-right: 0;
+  }
+
+  #start-date,
+  #end-date {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  #filter-button {
+      width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .chart-scorecard-container {
+      flex-direction: column;
+  }
+
+  .chart-container {
+      width: 100%;
+      margin-bottom: 2rem;
+  }
+
+  .scorecard-container {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .scorecard {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  .additional-charts-container {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .additional-chart {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  .dashboard h3 {
+      font-size: 1.5rem;
+  }
+
+  .dashboard form {
+      flex-direction: column;
+  }
+
+  .dashboard input,
+  .dashboard select {
+      width: 100%;
+      margin-right: 0;
+  }
+
+  .form-group {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0;
+  }
+
+  #start-date,
+  #end-date {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  #filter-button {
+      width: 100%;
+  }
+}

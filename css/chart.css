@@ -72,3 +72,39 @@
     border-radius: 10px;
     margin-bottom: 1rem;
 }
+
+
+@media (max-width: 1200px) {
+    .chart-container {
+        max-width: 800px; 
+    }
+
+    .additional-chart {
+        max-width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .chart-container, .scorecard-container, .additional-chart {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .additional-chart {
+        max-width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-container h2, .additional-chart .canvas-wrapper h2 {
+        font-size: 1.25rem; 
+    }
+
+    .scorecard h3 {
+        font-size: 1.125rem; 
+    }
+
+    .scorecard p {
+        font-size: 0.875rem; 
+    }
+}
