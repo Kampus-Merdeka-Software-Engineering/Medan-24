@@ -218,9 +218,7 @@ input {
   }
 
   #filter-button {
-    width: 100px;
-    margin-top: 2rem;
-    align-items: center;
+    width: 100%;
   }
 
   .form-group {
@@ -279,8 +277,7 @@ input {
   }
 
   #filter-button {
-    width: 50px;
-    margin-top: 2rem;
+    width: 100%;
   }
 
   .form-group {
