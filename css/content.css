@@ -1,169 +1,170 @@
 /* Content styles */
 .content {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-  }
-  
-  .dashboard {
-    background-color: #f7f7f7;
-    padding: 2rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .dashboard h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  
-  .dashboard form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .dashboard label {
-    margin-bottom: 0.5rem;
-  }
-  
-  .dashboard input,
-  .dashboard select {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
 
-  .chart-container {
-    padding: 20px;
-  }
+.dashboard {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  .selectBox,
-  input {
-    position: relative;
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: top;
-  }
+.dashboard h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
-  .selectBox:last-child {
-    margin-right: 0; /* Menghapus margin kanan pada selectBox terakhir */
-  }
+.dashboard form {
+  display: flex;
+  flex-direction: column;
+}
 
-  .selectBox select,
-  input {
-    width: 250px;
-    height: 50px;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #fff;
-    border-radius: 7px;
-  }
+.dashboard label {
+  margin-bottom: 0.5rem;
+}
 
-  #category {
-    width: 150px;
-  }
+.dashboard input,
+.dashboard select {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
-  #pizzaSelect {
-    width: 405.93px;
-  }
+.chart-container {
+  padding: 20px;
+}
 
-  #pizzaSizeSelect {
-    width: 130px;
-  }
+.selectBox,
+input {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
 
-  #start-date {
-    width: 170px;
-    border-radius: 7px;
-  }
+.selectBox:last-child {
+  margin-right: 0; /* Remove right margin on the last selectBox */
+}
 
-  #end-date {
-    width: 170px;
-    border-radius: 7px;
-  }
+.selectBox select,
+input {
+  width: 250px;
+  height: 50px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 7px;
+}
 
-  #filter-button {
-    background: #030037;
-    color: white;
-    width: 60px;
-    height: 48px;
-    border-radius: 7px;
-    cursor: pointer;
-    margin-top: 30px;
-  }
+#category {
+  width: 150px;
+}
 
-  #filter-button:hover {
-    background: #050061;
-  }
+#pizzaSelect {
+  width: 405.93px;
+}
 
-  .selectBox select:focus {
-    outline: none;
-  }
+#pizzaSizeSelect {
+  width: 130px;
+}
 
-  .selectBox ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    width: auto;
-    z-index: 1;
-  }
+#start-date {
+  width: 167px;
+  border-radius: 7px;
+}
 
-  .selectBox ul li {
-    float: left;
-  }
+#end-date {
+  width: 167px;
+  border-radius: 7px;
+}
 
-  .selectBox ul li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    border-bottom: 1px solid #ccc;
-  }
+#filter-button {
+  background: #030037;
+  color: white;
+  width: 50px;
+  height: 48px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 30px;
+}
 
-  .selectBox ul li:last-child a {
-    border-bottom: none;
-  }
+#filter-button:hover {
+  background: #050061;
+}
 
-  .selectBox ul li a:hover {
-    background-color: #f4f4f4;
-  }
+.selectBox select:focus {
+  outline: none;
+}
 
-  .form-group {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 10px;
-    margin-top: -25px;
-  }
+.selectBox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: auto;
+  z-index: 1;
+}
 
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: 2px;
-  }
+.selectBox ul li {
+  float: left;
+}
 
-  .form-group:last-child {
-    margin-right: 0;
-  }
+.selectBox ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
 
-  .canvas-wrapper {
-    margin-top: 20px;
-  }
+.selectBox ul li:last-child a {
+  border-bottom: none;
+}
 
-  .canvas-wrapper h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+.selectBox ul li a:hover {
+  background-color: #f4f4f4;
+}
 
-  
-  /* Responsive Styles */
+.form-group {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  margin-top: -25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.canvas-wrapper {
+  margin-top: 20px;
+}
+
+.canvas-wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
 @media (max-width: 1200px) {
   .chart-scorecard-container {
+    display: flex;
     flex-direction: column;
+    align-items: center !important;
   }
 
   .chart-container {
@@ -172,25 +173,64 @@
   }
 
   .scorecard-container {
+    display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 
   .scorecard {
     width: 100%;
     margin-bottom: 1rem;
+    box-sizing: border-box;
   }
 
   .additional-charts-container {
+    display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 
   .additional-chart {
     width: 100%;
     margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
+
+  .dashboard h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .dashboard input,
+  .dashboard select {
+    width: 100%;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  #start-date,
+  #end-date {
+    width: 100%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
+
+  #filter-button {
+    width: 100px;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .form-group {
+    margin-bottom: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+    align-item: center;
   }
 }
+
 
 @media (max-width: 768px) {
   .chart-scorecard-container {
@@ -239,150 +279,76 @@
   }
 
   #filter-button {
-    width: 100%;
-  }
-}
-
-/* Responsive Styles */
-@media (max-width: 1200px) {
-  .chart-scorecard-container {
-      flex-direction: column;
+    width: 50px;
+    margin-top: 2rem;
   }
 
-  .chart-container {
-      width: 100%;
-      margin-bottom: 2rem;
-  }
-
-  .scorecard-container {
-      flex-direction: column;
-      width: 100%;
-  }
-
-  .scorecard {
-      width: 100%;
-      margin-bottom: 1rem;
-  }
-
-  .additional-charts-container {
-      flex-direction: column;
-      width: 100%;
-  }
-
-  .additional-chart {
-      width: 100%;
-      margin-bottom: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .chart-scorecard-container {
-      flex-direction: column;
-  }
-
-  .chart-container {
-      width: 100%;
-      margin-bottom: 2rem;
-  }
-
-  .scorecard-container {
-      flex-direction: column;
-      width: 100%;
-  }
-
-  .scorecard {
-      width: 100%;
-      margin-bottom: 1rem;
-  }
-
-  .additional-charts-container {
-      flex-direction: column;
-      width: 100%;
-  }
-
-  .additional-chart {
-      width: 100%;
-      margin-bottom: 1rem;
-  }
-
-  .dashboard h3 {
-      font-size: 1.5rem;
-  }
-
-  .dashboard input,
-  .dashboard select {
-      width: 100%;
-      margin-right: 0;
-  }
-
-  #start-date,
-  #end-date {
-      width: 100%;
-      margin-bottom: 1rem;
-  }
-
-  #filter-button {
-      width: 100%;
+  .form-group {
+    margin-bottom: 3rem;
   }
 }
 
 @media (max-width: 600px) {
   .chart-scorecard-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .chart-container {
-      width: 100%;
-      margin-bottom: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
   .scorecard-container {
-      flex-direction: column;
-      width: 100%;
+    flex-direction: column;
+    width: 100%;
   }
 
   .scorecard {
-      width: 100%;
-      margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 
   .additional-charts-container {
-      flex-direction: column;
-      width: 100%;
+    flex-direction: column;
+    width: 100%;
   }
 
   .additional-chart {
-      width: 100%;
-      margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 
   .dashboard h3 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .dashboard form {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .dashboard input,
   .dashboard select {
-      width: 100%;
-      margin-right: 0;
+    width: 100%;
+    margin-right: 0;
   }
 
   .form-group {
-      width: 100%;
-      margin-right: 0;
-      margin-top: 0;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0;
   }
 
   #start-date,
   #end-date {
-      width: 100%;
-      margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 
   #filter-button {
-      width: 100%;
+    width: 100%;
+  }
+
+  #pizzaSelect {
+    width: 100%;
   }
 }

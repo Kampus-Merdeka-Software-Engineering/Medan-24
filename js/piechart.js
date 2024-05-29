@@ -35,9 +35,9 @@ xmlhttp.onreadystatechange = function () {
         ],
       },
       options: {
-        responsive: true
+        responsive: true,
+        maintainAspectRatio: true,
       },
-      
     });
 
     document.getElementById('category').addEventListener('change', function () {

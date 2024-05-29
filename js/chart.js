@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ],
         },
         options: {
+          responsive: true,
           scales: {
             y: {
               beginAtZero: true,
