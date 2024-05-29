@@ -36,7 +36,6 @@ xmlhttp.onreadystatechange = function () {
       },
       options: {
         responsive: true,
-        maintainAspectRatio: true,
       },
     });
 
