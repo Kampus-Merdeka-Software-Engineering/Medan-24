@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var xmlhttp = new XMLHttpRequest();
   var url = "./json/monthly_revenue.json";
-  xmlhttp.open("GET", url, true);
-  xmlhttp.send();
-  xmlhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      var data = JSON.parse(this.responseText);
+
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
       var months = data.monthly.map(function (elem) {
         return elem.month;
       });
@@ -62,13 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var filteredData = data.monthly.filter(function (elem) {
           var elemDate = parseMonthYear(elem.month);
-          console.log('startDate:', startDate);
-          console.log('endDate:', endDate);
-          console.log('elemDate:', elemDate);
           return elemDate >= startDate && elemDate <= endDate;
         });
 
-        console.log('filteredData:', filteredData); // Log filtered data
+        console.log('filteredData:', filteredData);
 
         var filteredMonths = filteredData.map(function (elem) {
           return elem.month;
@@ -83,15 +83,15 @@ document.addEventListener("DOMContentLoaded", function () {
         chart.update();
       }
 
-      // function parseMonthYear(monthYearStr) {
-      //   const monthNames = ["January", "February", "March", "April", "May", "June", 
-      //                       "July", "August", "September", "October", "November", "December"];
-      //   const [month, year] = monthYearStr.split(' ');
-      //   const monthIndex = monthNames.indexOf(month);
-      //   const date = new Date(year, monthIndex, 0);
-      //   console.log('Parsed date for', monthYearStr, ':', date);
-      //   return date;
-      // }
-    }
-  };
+      function parseMonthYear(monthYearStr) {
+        const monthNames = ["January", "February", "March", "April", "May", "June", 
+                            "July", "August", "September", "October", "November", "December"];
+        const [month, year] = monthYearStr.split(' ');
+        const monthIndex = monthNames.indexOf(month);
+        const date = new Date(year, monthIndex, 1); // Use 1 to get the first day of the month
+        console.log('Parsed date for', monthYearStr, ':', date);
+        return date;
+      }
+    })
+    .catch(error => console.error('Error:', error));
 });
