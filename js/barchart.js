@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   var xmlhttp = new XMLHttpRequest();
-  var url = "../json/most_ordered_size.json";
+  var url = "./json/most_ordered_size.json";
   xmlhttp.open("GET", url, true);
   xmlhttp.send();
   xmlhttp.onreadystatechange = function () {
