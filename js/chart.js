@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             "July", "August", "September", "October", "November", "December"];
         const [month, year] = monthYearStr.split(' ');
         const monthIndex = monthNames.indexOf(month);
-        const date = new Date(year, monthIndex, 1);
+        const date = new Date(year, monthIndex, 0);
         console.log('Parsed date for', monthYearStr, ':', date);
         return date;
       }
