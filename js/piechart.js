@@ -1,5 +1,5 @@
 var xmlhttp = new XMLHttpRequest();
-var url = "../json/most_category.json";
+var url = "./json/most_category.json";
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
 xmlhttp.onreadystatechange = function () {
