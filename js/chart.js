@@ -83,15 +83,15 @@ document.addEventListener("DOMContentLoaded", function () {
         chart.update();
       }
 
-      function parseMonthYear(monthYearStr) {
-        const monthNames = ["January", "February", "March", "April", "May", "June", 
-                            "July", "August", "September", "October", "November", "December"];
-        const [month, year] = monthYearStr.split(' ');
-        const monthIndex = monthNames.indexOf(month);
-        const date = new Date(year, monthIndex, 0);
-        console.log('Parsed date for', monthYearStr, ':', date);
-        return date;
-      }
+      // function parseMonthYear(monthYearStr) {
+      //   const monthNames = ["January", "February", "March", "April", "May", "June", 
+      //                       "July", "August", "September", "October", "November", "December"];
+      //   const [month, year] = monthYearStr.split(' ');
+      //   const monthIndex = monthNames.indexOf(month);
+      //   const date = new Date(year, monthIndex, 0);
+      //   console.log('Parsed date for', monthYearStr, ':', date);
+      //   return date;
+      // }
     }
   };
 });
