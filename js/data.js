@@ -3,7 +3,7 @@ const rowsPerPage = 8;
 let currentPage = 1;
 let selectedCategory = "All"; // Inisialisasi kategori yang dipilih
 
-fetch('../json/most_ordered_pizza2.json')
+fetch('./json/most_ordered_pizza2.json')
     .then(response => response.json())
     .then(json => {
         data = json;
