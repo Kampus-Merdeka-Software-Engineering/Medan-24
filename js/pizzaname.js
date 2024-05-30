@@ -1,6 +1,6 @@
 async function loadPizzaNames(category) {
     try {
-        const response = await fetch("../json/pizzaName.json");
+        const response = await fetch("./json/pizzaName.json");
         if (!response.ok) {
             throw new Error("Network response was not ok " + response.statusText);
         }
