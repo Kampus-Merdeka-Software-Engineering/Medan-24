@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   var xmlhttp = new XMLHttpRequest();
-  var url = "./json/monthly_revenue.json";
+  var url = "../json/monthly_revenue.json";
   xmlhttp.open("GET", url, true);
   xmlhttp.send();
   xmlhttp.onreadystatechange = function () {
