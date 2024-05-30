@@ -11,10 +11,12 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 91.5rem;
+  margin: 0 auto;
 }
 
 .dashboard h3 {
-  font-size: 30px;
+  font-size: 2rem; /* Use rem for consistency */
   font-weight: bold;
   margin-bottom: 1rem;
   text-align: center;
@@ -35,6 +37,7 @@
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 1rem; /* Use rem for consistency */
 }
 
 .chart-container {
@@ -55,44 +58,44 @@ input {
 
 .selectBox select,
 input {
-  width: 250px;
-  height: 50px;
-  padding: 10px;
-  font-size: 16px;
+  width: 15rem; /* Use rem for consistency */
+  height: 3rem; /* Use rem for consistency */
+  padding: 0.5rem; /* Use rem for consistency */
+  font-size: 1rem; /* Use rem for consistency */
   background-color: #fff;
   border-radius: 7px;
 }
 
 #category {
-  width: 150px;
+  width: 10rem; /* Use rem for consistency */
 }
 
 #pizzaSelect {
-  width: 405.93px;
+  width: 25rem; /* Use rem for consistency */
 }
 
 #pizzaSizeSelect {
-  width: 130px;
+  width: 8rem; /* Use rem for consistency */
 }
 
 #start-date {
-  width: 167px;
+  width: 10rem; /* Use rem for consistency */
   border-radius: 7px;
 }
 
 #end-date {
-  width: 167px;
+  width: 10rem; /* Use rem for consistency */
   border-radius: 7px;
 }
 
 #filter-button {
   background: #030037;
   color: white;
-  width: 50px;
-  height: 48px;
+  width: 3rem; /* Use rem for consistency */
+  height: 3rem; /* Use rem for consistency */
   border-radius: 7px;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 2rem; /* Use rem for consistency */
 }
 
 #filter-button:hover {
@@ -118,7 +121,7 @@ input {
 
 .selectBox ul li a {
   display: block;
-  padding: 10px;
+  padding: 0.5rem; /* Use rem for consistency */
   text-decoration: none;
   color: #333;
   border-bottom: 1px solid #ccc;
@@ -135,16 +138,16 @@ input {
 .form-group {
   display: inline-block;
   vertical-align: top;
-  margin-right: 5px;
-  margin-top: -25px;
+  margin-right: 0.5rem; /* Use rem for consistency */
+  margin-top: -1.5rem; /* Use rem for consistency */
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 5px;
-  font-size: 14px;
+  margin-bottom: 0.5rem; /* Use rem for consistency */
+  font-size: 1rem; /* Use rem for consistency */
   font-weight: bold;
-  margin-left: 2px;
+  margin-left: 0.1rem; /* Use rem for consistency */
 }
 
 .form-group:last-child {
@@ -152,12 +155,12 @@ input {
 }
 
 .canvas-wrapper {
-  margin-top: 20px;
+  margin-top: 2rem; /* Use rem for consistency */
 }
 
 .canvas-wrapper h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem; /* Use rem for consistency */
 }
 
 /* Responsive Styles */

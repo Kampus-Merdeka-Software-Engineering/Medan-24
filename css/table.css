@@ -1,3 +1,4 @@
+
 .additional-chart .canvas-wrapper .table-container h2 {
     text-align: center;
     padding: 5px;
@@ -7,7 +8,7 @@
 }
 
 .additional-chart .canvas-wrapper .table-container table {
-    width: 420px;
+    width: 100%;
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
@@ -17,6 +18,7 @@
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Allow the table to grow to fill the container */
 }
 
 .additional-chart .canvas-wrapper .table-container th, td {
@@ -64,7 +66,11 @@
     opacity: 0.5;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+    .additional-chart .canvas-wrapper .table-container {
+        height: 34rem;
+    }
+
     .additional-chart .canvas-wrapper .table-container table {
         width: 100%;
         font-size: 12px;
@@ -83,7 +89,6 @@
     .additional-chart .pagination span {
         display: none;
     }
-}
 
 @media (max-width: 768px) {
     .additional-chart .canvas-wrapper .table-container table {
