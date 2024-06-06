@@ -4,42 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-html button,
-html hr,
-html input {
-  overflow: visible;
-}
-
-html audio,
-html canvas,
-html progress,
-html video {
-  display: inline-block;
-}
-
-html progress,
-html sub,
-html sup {
-  vertical-align: baseline;
-}
-
-html [type="checkbox"],
-html [type="radio"],
-html legend {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-html html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-html body {
-  margin: 0;
-}
-
-html article,
+/* html article,
 html aside,
 html details,
 html figcaption,
@@ -51,9 +16,9 @@ html menu,
 html nav,
 html section {
   display: block;
-}
+} */
 
-html figure {
+/* html figure {
   margin: 1em 40px;
 }
 
@@ -93,9 +58,9 @@ html dfn {
 html mark {
   background-color: #ff0;
   color: #000;
-}
+} */
 
-html small {
+/* html small {
   font-size: 80%;
 }
 
@@ -117,15 +82,15 @@ html sup {
 html audio:not([controls]) {
   display: none;
   height: 0;
-}
+} */
 
-html img {
+/* html img {
   border-style: none;
 }
 
 html svg:not(:root) {
   overflow: hidden;
-}
+} */
 
 html button,
 html input,
@@ -137,12 +102,12 @@ html textarea {
   margin: 0;
 }
 
-html button,
+/* html button,
 html select {
   text-transform: none;
-}
+} */
 
-html [type="reset"],
+/* html [type="reset"],
 html [type="submit"],
 html button,
 html html [type="button"] {
@@ -206,10 +171,10 @@ html summary {
 html [hidden],
 html template {
   display: none;
-}
+} */
 
 /* Defaults */
-html {
+/* html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -230,7 +195,7 @@ html {
   -ms-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
-}
+} */
 
 img {
   -webkit-flex-shrink: 0;
@@ -241,7 +206,7 @@ img {
   vertical-align: bottom;
 }
 
-section {
+/* section {
   overflow: hidden;
 }
 
@@ -257,7 +222,7 @@ section {
 
 :root {
   --primary: #fff;
-}
+} */
 
 * {
   margin: 0;
@@ -266,6 +231,7 @@ section {
   outline: none;
   border: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -292,7 +258,7 @@ body {
   overflow-x: hidden;
 }
 
-a {
+/* a {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
@@ -301,9 +267,9 @@ a {
   color: #575bde;
   cursor: pointer;
   text-decoration: none;
-}
+} */
 
-a:hover:not(.button) {
+/* a:hover:not(.button) {
   color: #110f24;
   opacity: 0.9;
 }
@@ -369,9 +335,9 @@ h1.hero {
   font-size: 3rem;
   font-weight: 900;
   line-height: 3.75rem;
-}
+} */
 
-@media only screen and (max-width: 479px) {
+/* @media only screen and (max-width: 479px) {
   h1 {
     font-size: 3rem;
     line-height: 3.75rem;
@@ -393,14 +359,14 @@ h2 {
     font-size: 2.5rem;
     line-height: 3.25rem;
   }
-}
+} */
 
 /* -----------------------------------------------------------------------------
 
 # Base - Grid
 
 ----------------------------------------------------------------------------- */
-.row {
+/* .row {
   display: table;
   display: -webkit-flex;
   display: -moz-flex;
@@ -506,7 +472,7 @@ h2 {
 }
 
 /* Reduce spacing between rows */
-@media only screen and (max-width: 1023px) {
+/* @media only screen and (max-width: 1023px) {
   .row.reduce-spacing [class^="col-"] {
     margin: 1rem 2% 0 2%;
   }
@@ -537,7 +503,7 @@ h2 {
   .row.reduce-spacing [class^="col-"]:nth-child(2) {
     margin-top: 1rem;
   }
-}
+} */
 
 /* -----------------------------------------------------------------------------
 

@@ -12,7 +12,6 @@
 .chart-container h2 {
     font-size: 25px;
     text-align: center;
-    /* padding: 0.5rem; */
     border-radius: 10px;
     margin-bottom: 0.5rem;
 }
@@ -98,7 +97,8 @@
 
 @media (max-width: 480px) {
     .chart-container h2, .additional-chart .canvas-wrapper h2 {
-        font-size: 1.25rem; 
+        font-size: 2rem;
+        padding: 2rem;
     }
 
     .scorecard h3 {

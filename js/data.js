@@ -1,5 +1,5 @@
 let data = [];
-const rowsPerPage = 8;
+const rowsPerPage = 7;
 let currentPage = 1;
 let selectedCategory = "All"; // Inisialisasi kategori yang dipilih
 

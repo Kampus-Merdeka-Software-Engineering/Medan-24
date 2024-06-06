@@ -1,4 +1,3 @@
-/* Content styles */
 .content {
   display: flex;
   flex-direction: column;
@@ -16,7 +15,7 @@
 }
 
 .dashboard h3 {
-  font-size: 2rem; /* Use rem for consistency */
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
   text-align: center;
@@ -37,7 +36,7 @@
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1rem; /* Use rem for consistency */
+  font-size: 1rem;
 }
 
 .chart-container {
@@ -53,49 +52,49 @@ input {
 }
 
 .selectBox:last-child {
-  margin-right: 0; /* Remove right margin on the last selectBox */
+  margin-right: 0;
 }
 
 .selectBox select,
 input {
-  width: 15rem; /* Use rem for consistency */
-  height: 3rem; /* Use rem for consistency */
-  padding: 0.5rem; /* Use rem for consistency */
-  font-size: 1rem; /* Use rem for consistency */
+  width: 15rem;
+  height: 3rem;
+  padding: 0.5rem;
+  font-size: 1rem;
   background-color: #fff;
   border-radius: 7px;
 }
 
 #category {
-  width: 10rem; /* Use rem for consistency */
+  width: 10rem;
 }
 
 #pizzaSelect {
-  width: 25rem; /* Use rem for consistency */
+  width: 25rem;
 }
 
 #pizzaSizeSelect {
-  width: 8rem; /* Use rem for consistency */
+  width: 8rem;
 }
 
 #start-date {
-  width: 10rem; /* Use rem for consistency */
+  width: 10rem;
   border-radius: 7px;
 }
 
 #end-date {
-  width: 10rem; /* Use rem for consistency */
+  width: 10rem;
   border-radius: 7px;
 }
 
 #filter-button {
   background: #030037;
   color: white;
-  width: 3rem; /* Use rem for consistency */
-  height: 3rem; /* Use rem for consistency */
+  width: 3rem;
+  height: 3rem;
   border-radius: 7px;
   cursor: pointer;
-  margin-top: 2rem; /* Use rem for consistency */
+  margin-top: 2rem;
 }
 
 #filter-button:hover {
@@ -121,7 +120,7 @@ input {
 
 .selectBox ul li a {
   display: block;
-  padding: 0.5rem; /* Use rem for consistency */
+  padding: 0.5rem;
   text-decoration: none;
   color: #333;
   border-bottom: 1px solid #ccc;
@@ -138,16 +137,16 @@ input {
 .form-group {
   display: inline-block;
   vertical-align: top;
-  margin-right: 0.5rem; /* Use rem for consistency */
-  margin-top: -1.5rem; /* Use rem for consistency */
+  margin-right: 0.5rem;
+  margin-top: -1.5rem;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem; /* Use rem for consistency */
-  font-size: 1rem; /* Use rem for consistency */
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
   font-weight: bold;
-  margin-left: 0.1rem; /* Use rem for consistency */
+  margin-left: 0.1rem;
 }
 
 .form-group:last-child {
@@ -155,12 +154,12 @@ input {
 }
 
 .canvas-wrapper {
-  margin-top: 2rem; /* Use rem for consistency */
+  margin-top: 2rem;
 }
 
 .canvas-wrapper h2 {
   text-align: center;
-  margin-bottom: 2rem; /* Use rem for consistency */
+  margin-bottom: 2rem;
 }
 
 /* Responsive Styles */
@@ -304,6 +303,14 @@ input {
     width: 100%;
   }
 
+  .scorecard-container .scorecard h3 {
+    font-size: 2rem;
+  }
+
+  .scorecard-container .scorecard p {
+    font-size: 16px;
+  }
+
   .scorecard {
     width: 100%;
     margin-bottom: 1rem;
@@ -319,8 +326,13 @@ input {
     margin-bottom: 1rem;
   }
 
+  .dashboard {
+    width: 352px;
+  }
+
   .dashboard h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding-top: 2rem;
   }
 
   .dashboard form {
@@ -336,20 +348,33 @@ input {
   .form-group {
     width: 100%;
     margin-right: 0;
-    margin-top: 0;
+    margin-top: -20px;
   }
 
   #start-date,
   #end-date {
     width: 100%;
     margin-bottom: 1rem;
+    height: 40px;
   }
 
   #filter-button {
     width: 100%;
+    height: 40px;
   }
 
   #pizzaSelect {
-    width: 100%;
+    width: 274px;
+    height: 40px;
+  }
+
+  #category {
+    width: 274px;
+    height: 40px;
+  }
+
+  #pizzaSizeSelect {
+    width: 274px;
+    height: 40px;
   }
 }
