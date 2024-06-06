@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       var total = data.monthly.map(function (elem) {
-        return parseFloat(elem.total_revenue); // Ensure revenue is a number
+        return parseFloat(elem.total_revenue);
       });
 
       var ctx = document.getElementById("canvas");
@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
 
-        // Check if the selected dates are within the year 2015
         if (startDate.getFullYear() !== 2015 || endDate.getFullYear() !== 2015) {
           alert("Please select dates within the year 2015.");
           return;
@@ -75,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         var filteredRevenue = filteredData.map(function (elem) {
-          return parseFloat(elem.total_revenue); // Ensure revenue is a number
+          return parseFloat(elem.total_revenue);
         });
 
         chart.data.labels = filteredMonths;
@@ -88,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             "July", "August", "September", "October", "November", "December"];
         const [month, year] = monthYearStr.split(' ');
         const monthIndex = monthNames.indexOf(month);
-        const date = new Date(year, monthIndex, 1); // Use 1 to get the first day of the month
+        const date = new Date(year, monthIndex, 1);
         console.log('Parsed date for', monthYearStr, ':', date);
         return date;
       }
