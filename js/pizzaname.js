@@ -1,4 +1,4 @@
-async function loadPizzaNames(category) {
+async function ambilNama(category) {
     try {
         const response = await fetch("./json/pizzaName.json");
         if (!response.ok) {
@@ -21,10 +21,10 @@ async function loadPizzaNames(category) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    loadPizzaNames("All");
+    ambilNama("All");
 
     document.getElementById('category').addEventListener('change', function () {
         const selectedCategory = this.value;
-        loadPizzaNames(selectedCategory);
+        ambilNama(selectedCategory);
     });
 });

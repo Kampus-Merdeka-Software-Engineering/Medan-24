@@ -1,10 +1,7 @@
-var xmlhttp = new XMLHttpRequest();
 var url = "./json/most_category.json";
-xmlhttp.open("GET", url, true);
-xmlhttp.send();
-xmlhttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    var data = JSON.parse(this.responseText);
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
     var categoryColors = {
       "Classic": "#F10096",
       "Supreme": "#0072F0",
@@ -44,18 +41,15 @@ xmlhttp.onreadystatechange = function () {
       var filteredData = data.most_category.filter(function (elem) {
         return elem.Category === selectedCategory;
       });
-      
+
       if (selectedCategory === "All") {
-        // Menampilkan semua data
         filteredData = data.most_category;
       } else {
-        // Menampilkan data berdasarkan kategori yang dipilih
         filteredData = data.most_category.filter(function (elem) {
           return elem.Category === selectedCategory;
         });
       }
 
-      // Memperbarui data pada chart
       pieChart.data.labels = filteredData.map(function (elem) {
         return elem.Category;
       });
@@ -71,13 +65,5 @@ xmlhttp.onreadystatechange = function () {
 
       pieChart.update();
     });
-  }
-};
-
-// const category = document.getElementById('category');
-// category.addEventListener('change', categorySelect);
-// function categorySelect(){
-//   console.log(category.value);
-
-//   pieChart.update();
-// }
+  })
+  .catch(error => console.error('Error fetching data:', error));

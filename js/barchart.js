@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var xmlhttp = new XMLHttpRequest();
   var url = "./json/most_ordered_size.json";
-  xmlhttp.open("GET", url, true);
-  xmlhttp.send();
-  xmlhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      var data = JSON.parse(this.responseText);
+  
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
       var pizza_size = data.size.map(function (elem) {
         return elem.Pizza_Size;
       });
@@ -59,6 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         chart.update();
       });
-    }
-  };
+    })
+    .catch(error => console.error('Error fetching data:', error));
 });
