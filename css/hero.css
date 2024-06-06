@@ -32,6 +32,12 @@ input[type="text"] {
   border-radius: 0;
   font-size: 25px;
   margin-left: 5px;
+  width: 350px;
+}
+
+::placeholder {
+  color: white;
+  font-size: 18px;
 }
 
 h3 {
