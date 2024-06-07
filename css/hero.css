@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: flex-start;
   right: 0;
+  top: -3rem;
 }
 
 .hero-text {
@@ -50,6 +51,7 @@ h3 {
     justify-content: center; /* Pusatkan konten pada layar kecil */
     top: 0;
     right: 0;
+    top: -3rem;
   }
 
   .hero-text {

@@ -1,21 +1,31 @@
 let data = [];
 const rowsPerPage = 7;
 let currentPage = 1;
-let selectedCategory = "All"; // Inisialisasi kategori yang dipilih
+let selectedCategory = "All";
 
 fetch('./json/most_ordered_pizza2.json')
     .then(response => response.json())
     .then(json => {
         data = json;
+        data = data.map(item => {
+            return {
+                ...item,
+                Revenue: parseFloat(item.Revenue.replace(/[$,]/g, '')) // Mengubah Revenue menjadi number
+            };
+        });
+        sortDataByRevenue();
         displayTable(currentPage);
     })
     .catch(error => console.error('Error fetching data:', error));
+
+function sortDataByRevenue() {
+    data.sort((a, b) => b.Revenue - a.Revenue);
+}
 
 function displayTable(page) {
     const start = (page - 1) * rowsPerPage;
     const end = start + rowsPerPage;
 
-    // Filter data berdasarkan kategori yang dipilih
     const filteredData = data.filter(item => selectedCategory === "All" || item.Category === selectedCategory);
 
     const paginatedData = filteredData.slice(start, end);
@@ -30,7 +40,11 @@ function displayTable(page) {
 
         columns.forEach(column => {
             const td = document.createElement('td');
-            td.textContent = row[column];
+            if (column === 'Revenue') {
+                td.textContent = `$${row[column].toLocaleString()}`;
+            } else {
+                td.textContent = row[column];
+            }
             tr.appendChild(td);
         });
 
@@ -43,7 +57,8 @@ function displayTable(page) {
 }
 
 function nextPage() {
-    if (currentPage < Math.ceil(data.length / rowsPerPage)) {
+    const totalPages = Math.ceil(data.filter(item => selectedCategory === "All" || item.Category === selectedCategory).length / rowsPerPage);
+    if (currentPage < totalPages) {
         currentPage++;
         displayTable(currentPage);
     }
@@ -56,9 +71,8 @@ function prevPage() {
     }
 }
 
-// Event listener untuk perubahan dropdown kategori
 document.getElementById('category').addEventListener('change', function () {
-    selectedCategory = this.value; // Menyimpan kategori yang dipilih
-    currentPage = 1; // Reset halaman ke halaman pertama
-    displayTable(currentPage); // Menampilkan tabel dengan kategori yang dipilih
+    selectedCategory = this.value;
+    currentPage = 1;
+    displayTable(currentPage);
 });

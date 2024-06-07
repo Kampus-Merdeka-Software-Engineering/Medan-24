@@ -1,9 +1,3 @@
-.content {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-}
-
 .dashboard {
   background-color: #f7f7f7;
   padding: 2rem;
@@ -88,7 +82,7 @@ input {
 }
 
 #filter-button {
-  background: #030037;
+  background: #8a79a8;
   color: white;
   width: 3rem;
   height: 3rem;
@@ -98,7 +92,7 @@ input {
 }
 
 #filter-button:hover {
-  background: #050061;
+  background: #7c6a9d;
 }
 
 .selectBox select:focus {

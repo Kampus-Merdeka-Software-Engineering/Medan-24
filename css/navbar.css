@@ -1,16 +1,24 @@
 /* Navbar styles */
 .navbar {
-  background-color: #5a7492;
+  background-color: #6f5a92;
   padding: 1rem 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .navbar .navbar-logo {
-  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
+}
+
+.navbar .navbar-logo .logo-image {
+  height: 2.5rem;
+  margin-right: 0.5rem;
 }
 
 .navbar .navbar-logo span {
@@ -23,7 +31,9 @@
   color: #fff;
   display: inline-block;
   font-size: 1.3rem;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
 }
 
 .navbar .navbar-nav a:hover {
@@ -34,7 +44,6 @@
   content: "";
   display: block;
   padding-bottom: 0.5rem;
-  /* border-bottom: 0.1rem solid #333; */
   transform: scaleX(0);
   transition: 0.2s linear;
 }
@@ -42,9 +51,6 @@
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
 }
-
-/* display none untuk desktop */
-/* display block untuk mobile */
 
 .navbar .navbar-extra a {
   color: #fff;
@@ -70,9 +76,9 @@ i {
 .search-container {
   display: none;
   position: fixed;
-  top: 4rem; /* Sesuaikan dengan tinggi navbar Anda */
+  top: 4rem;
   left: 0;
-  z-index: 999; /* Pastikan input pencarian tampil di atas konten lain */
+  z-index: 999;
   width: 100%;
   padding: 2rem;
   background-color: #5a7492; /* Warna background */
@@ -81,24 +87,21 @@ i {
 }
 
 #search-input {
-  width: calc(
-    100% - 1rem
-  ); /* Lebar input adalah 100% lebar container dikurangi padding */
+  width: calc(100% - 1rem);
   border: none;
-  border-bottom: 2px solid #fff; /* Garis bawah */
+  border-bottom: 2px solid #fff;
   outline: none;
   font-size: 1rem;
   padding: 0.5rem 0;
   margin: 0;
-  background-color: #5a7492; /* Warna background */
-  color: #fff; /* Warna teks input */
+  background-color: #5a7492;
+  color: #fff;
 }
 
 #search-input::placeholder {
-  color: #fff; /* Warna teks placeholder */
+  color: #fff;
 }
 
-/* Tampilkan input pencarian saat tombol pencarian diklik */
 .show-search {
   display: block;
 }
@@ -120,7 +123,7 @@ i {
 
 @media (max-width: 768px) {
   html {
-    font-size: 62.5%; /* Pastikan formatnya benar */
+    font-size: 62.5%;
   }
 
   .navbar-extra {
