@@ -1,0 +1,24 @@
+{
+  "size": [
+    {
+      "Pizza_Size": "L",
+      "Total_Order": "12736"
+    },
+    {
+      "Pizza_Size": "M",
+      "Total_Order": "11159"
+    },
+    {
+      "Pizza_Size": "S",
+      "Total_Order": "10490"
+    },
+    {
+      "Pizza_Size": "XL",
+      "Total_Order": "544"
+    },
+    {
+      "Pizza_Size": "XXL",
+      "Total_Order": "28"
+    }
+  ]
+}

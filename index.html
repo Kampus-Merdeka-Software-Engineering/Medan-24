@@ -1,46 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <nav></nav>
 
-    <section class="berita">
-      <header id="berita1">
-        <h2>Medan 24 - RevoU</h2>
-      </header>
-      <main id="berita2">
-        <h3>Login</h3>
-        <form action="">
-          <label for="namaDepan">Nama Depan :</label>
-          <input type="text" id="namaDepan" name="namaDepan" />
-          <label for="notelp">No telp</label>
-          <input type="number" id="notelp" name="notelp" />
+<head>
+  <title>RevoU Medan 24 Dashboard Website</title>
+  <link rel="icon" type="image/x-icon" href="img/pizza.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon-precomposed" href="media/logopizza.png" />
+  <link rel="icon" href="media/logopizza.png" />
+  <link rel="mask-icon" href="media/pizza.svg" color="rgb(36,38,58)" />
+  <link rel="shortcut icon" href="media/logopizza.png" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/hero.css" />
+  <link rel="stylesheet" href="./css/content.css" />
+  <link rel="stylesheet" href="./css/card.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/carousel.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-          <button type="submit">Login</button>
-        </form>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
 
+<body>
+  <!-- Header Start Here -->
+  <header class="navbar">
+    <a href="#" class="navbar-logo">
+      <img src="./img/revou_logo.svg" alt="Pizza's Logo" class="logo-image">
+      Medan24 Pizza
+    </a>
+    <nav>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="teams.html">Teams</a>
+      </div>
+      <div id="hamburger-menu" onclick="toggleMenu()">
+        <i data-feather="menu"></i>
+      </div>
+    </nav>
+  </header>
 
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 id="greeting">Hello... may we know your name?</h1>
+      <input type="text" id="nameInput" placeholder="Enter your name here...">
+    </div>
+  </div>
+  <!-- Header End Here -->
 
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+  <!-- Main Content Start Here -->
+  <main class="content">
+    <section class="bg-gradient-light padding">
+      <div class="center max-width-l">
+        <h4>Our Today's Promo</h4>
+        <div class="container">
+          <div class="slider-wrapper">
+            <button id="prev-slide" class="slide-button material-symbols-rounded">
+              chevron_left
+            </button>
+            <ul class="image-list">
+              <li><img class="image-item" src="img/Opsi 1.jpeg" alt="img-1" /></li>
+              <li><img class="image-item" src="img/Opsi 2.png" alt="img-2" /></li>
+              <li><img class="image-item" src="img/Opsi 3.jpeg" alt="img-3" /></li>
+              <li><img class="image-item" src="img/1.png" alt="img-4" /></li>
+              <li><img class="image-item" src="img/2.png" alt="img-5" /></li>
+              <li><img class="image-item" src="img/3.png" alt="img-6" /></li>
+              <li><img class="image-item" src="img/4.png" alt="img-7" /></li>
+              <li><img class="image-item" src="img/5.png" alt="img-8" /></li>
+              <li><img class="image-item" src="img/6.png" alt="img-9" /></li>
+              <li><img class="image-item" src="img/7.png" alt="img-10" /></li>
+            </ul>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+              chevron_right
+            </button>
+          </div>
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+            </div>
           </div>
         </div>
-      </main>
-      <footer></footer>
     </section>
-    <section></section>
 
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+    <div class="section-products">
+      <h2>Our Pizza's</h2>
+      <div class="container-products">
+        <div class="card-product">
+          <img src="./img/pizza1.jpg" alt="">
+          <h3>Classic Pizza</h3>
+        </div>
+        <div class="card-product">
+          <img src="./img/pizza2.jpg" alt="">
+          <h3>Supreme Pizza</h3>
+        </div>
+        <div class="card-product">
+          <img src="./img/pizza3.jpg" alt="">
+          <h3>Chicken Pizza</h3>
+        </div>
+        <div class="card-product">
+          <img src="./img/pizza4.jpg" alt="">
+          <h3>Veggie Pizza</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Main Content End Here -->
+
+  <!-- Footer Start Here -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2>About Us</h2>
+        <p>
+          Welcome to Medan24 Pizza! Your go-to spot for mouthwatering pizzas. Experience quality ingredients and
+          authentic flavors, all served with a smile. Join us for a slice of perfection today!
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2024 RevoU Medan Team 24. All rights reserved</div>
+  </footer>
+  <!-- Footer End Here -->
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/pizzaname.js"></script>
+  <script src="js/barchart.js"></script>
+  <script src="js/piechart.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/carousel.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("nameInput").addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          start();
+        }
+      });
+
+      function start() {
+        var name = document.getElementById("nameInput").value;
+        var greeting = document.getElementById("greeting");
+        if (name.trim() !== "") {
+          greeting.innerHTML = "<h1>Hello... " + name + "," + "</h1><h3>Welcome to dashboard website Medan Team 24</h3>";
+          document.getElementById("nameInput").style.display = "none";
+        }
+      }
+    });
+  </script>
+</body>
+
 </html>

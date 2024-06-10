@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RevoU Medan 24 Dashboard Website</title>
+    <link rel="icon" type="image/x-icon" href="img/pizza.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon-precomposed" href="media/logopizza.png" />
+    <link rel="icon" href="media/logopizza.png" />
+    <link rel="mask-icon" href="media/pizza.svg" color="rgb(36,38,58)" />
+    <link rel="shortcut icon" href="media/logopizza.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/chart.css">
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <!-- Header Start Here -->
+    <header class="navbar">
+        <a href="#" class="navbar-logo">
+            <img src="./img/revou_logo.svg" alt="Pizza's Logo" class="logo-image">
+            Medan24 Pizza
+        </a>
+        <nav>
+            <div class="navbar-nav">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="teams.html">Teams</a>
+            </div>
+            <div id="hamburger-menu" onclick="toggleMenu()">
+                <i data-feather="menu"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End Here -->
+
+    <!-- Dashboard Start Here -->
+    <section class="dashboard" id="dashboard">
+        <h3>Dashboard Pizza Sales 2015</h3>
+        <div class="chart-scorecard-container">
+            <div class="chart-container">
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <div class="selectBox">
+                        <select id="category">
+                            <option style="display:none">Category</option>
+                            <option>All</option>
+                            <option>Classic</option>
+                            <option>Supreme</option>
+                            <option>Veggie</option>
+                            <option>Chicken</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pizzaSelect">Pizza Name</label>
+                    <div class="selectBox">
+                        <select id="pizzaSelect">
+                            <option style="display:none">Pizza Name</option>
+                            <option>The Hawaiian Pizza</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pizzaSizeSelect">Pizza Size</label>
+                    <div class="selectBox">
+                        <select id="pizzaSizeSelect">
+                            <option style="display:none">Pizza Size</option>
+                            <option>All</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="start-date">Start Date</label>
+                    <input type="date" id="start-date" max="2015-12-31">
+                </div>
+                <div class="form-group">
+                    <label for="end-date">End Date</label>
+                    <input type="date" id="end-date" max="2015-12-31">
+                </div>
+                <div class="form-group">
+                    <button id="filter-button">OK</button>
+                </div>
+                <div class="canvas-wrapper">
+                    <h2>Monthly Revenue</h2>
+                    <canvas id="canvas" height="330"></canvas>
+                </div>
+            </div>
+            <div class="scorecard-container">
+                <div class="scorecard">
+                    <h3 style="font-weight: bold;">Total Revenue</h3>
+                    <p>$817,839</p>
+                </div>
+                <div class="scorecard">
+                    <h3 style="font-weight: bold;">Total Orders</h3>
+                    <p>21,350</p>
+                </div>
+                <div class="scorecard">
+                    <h3 style="font-weight: bold;">Total Sold Out Products</h3>
+                    <p>49,574</p>
+                </div>
+                <div class="scorecard">
+                    <h3 style="font-weight: bold;">Average Order Value</h3>
+                    <p>$38</p>
+                </div>
+            </div>
+        </div>
+        <div class="additional-charts-container">
+            <div class="additional-chart">
+                <div class="canvas-wrapper">
+                    <h2>Most Category</h2>
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+            <div class="additional-chart">
+                <div class="canvas-wrapper">
+                    <div class="table-container">
+                        <h2>Most Ordered Pizza</h2>
+                        <table id="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Pizza Name</th>
+                                    <th>Total Order</th>
+                                    <th>Revenue</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination">
+                        <button id="prev" onclick="prevPage()"><i class="fa-solid fa-angle-left"></i></i></button>
+                        <span id="page-info"></span>
+                        <button id="next" onclick="nextPage()"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="additional-chart">
+                <div class="canvas-wrapper">
+                    <h2>Most Ordered Size</h2>
+                    <canvas id="barChart" height="299"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- Dashboard End Here -->
+
+    <!-- Footer Start Here -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to Medan24 Pizza! Your go-to spot for mouthwatering pizzas. Experience quality
+                    ingredients and authentic flavors, all served with a smile. Join us for a slice of perfection today!
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2024 RevoU Medan Team 24. All rights reserved</div>
+    </footer>
+    <!-- Footer End Here -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/pizzaname.js"></script>
+    <script src="js/barchart.js"></script>
+    <script src="js/piechart.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("nameInput").addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    start();
+                }
+            });
+
+            function start() {
+                var name = document.getElementById("nameInput").value;
+                var greeting = document.getElementById("greeting");
+                if (name.trim() !== "") {
+                    greeting.innerHTML = "<h1>Hello... " + name + "," + "</h1><h3>Welcome to dashboard website Medan Team 24</h3>";
+                    document.getElementById("nameInput").style.display = "none";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

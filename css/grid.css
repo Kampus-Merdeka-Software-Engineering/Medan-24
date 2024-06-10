@@ -1,0 +1,79 @@
+/* ------------------------------------------- */
+/* Adding Grid Layout and Style for the chart */
+/* ----------------------------------------- */
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 70px 70px 70px 70px 150px;
+    grid-template-columns: 7fr 5fr 5fr 1fr 4fr 1fr 1fr;
+    gap: 7px;
+  }
+  
+  .item1 {
+    grid-row: 1 / 5;
+    grid-column: 1 / 5;
+    /* border: 1px solid #000000; */
+    border-radius: 8px;
+  }
+  
+  .item2 {
+    grid-row: 1 / 2;
+    grid-column: 5 / 10;
+    /* border: 1px solid #000000; */
+    border-radius: 8px;
+  }
+  
+  .item3 {
+    grid-row: 2 / 3;
+    grid-column: span 5;
+    /* border: 1px solid #000000; */
+    border-radius: 8px;
+  }
+  
+  .item4 {
+    grid-row: 3 / 3;
+    grid-column: span 5;
+    /* border: 1px solid #000000; */
+    border-radius: 8px;
+  }
+  
+  .item5 {
+    grid-row: 4 / 4;
+    grid-column: span 5;
+    /* border: 1px solid #000000; */
+    border-radius: 8px;
+  }
+  
+  .item6 {
+    grid-row: 6 / 5;
+    grid-column: span 1;
+    /* border: 1px solid #000000; */
+    border-radius: 8px;
+  }
+  
+  .item7 {
+    grid-row: 6 / 5;
+    grid-column: span 3;
+    /* border: 1px solid #000000; */
+    border-radius: 8px;
+  }
+  
+  .item8 {
+    grid-row: 6 / 5;
+    grid-column: span 5;
+    /* border: 1px solid #000000; */
+    border-radius: 8px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Merubah menjadi satu kolom untuk layar yang lebih kecil */
+      grid-template-rows: auto; /* Menggunakan auto agar baris berukuran dinamis */
+    }
+  
+    /* Menyesuaikan item agar muncul satu per satu di bawah satu sama lain */
+    .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8 {
+      grid-row: auto;
+      grid-column: auto;
+    }
+  }

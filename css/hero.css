@@ -1,0 +1,105 @@
+.hero-image {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 92.5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  right: 0;
+  top: -3rem;
+}
+
+.hero-text {
+  margin-left: 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  padding-bottom: 3rem;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 3px solid #fff; /* Garis bawah */
+  outline: none;
+  color: white;
+  background: transparent;
+  border-radius: 0;
+  font-size: 25px;
+  margin-left: 5px;
+  width: 350px;
+}
+
+::placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-image {
+    justify-content: center; /* Pusatkan konten pada layar kecil */
+    top: 0;
+    right: 0;
+    top: -3rem;
+  }
+
+  .hero-text {
+    margin-left: 0; /* Hapus margin kiri */
+    text-align: center; /* Teks berada di tengah */
+  }
+
+  .hero-text div {
+    text-align: center;
+  }
+
+  input[type="text"] {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 22px; /* Ubah ukuran font */
+  }
+
+  .hero-text h3 {
+    font-size: 16px; /* Ubah ukuran font */
+    padding: 10px;
+  }
+}
+
+/* Responsif untuk layar yang sangat kecil */
+@media screen and (max-width: 450px) {
+  .hero-text h1 {
+    padding: 5px;
+    line-height: 1.5;
+    font-size: 24px;
+  }
+
+  .hero-text div {
+    text-align: center;
+  }
+
+  input[type="text"] {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .hero-text h3 {
+    font-size: 18px;
+  }
+}

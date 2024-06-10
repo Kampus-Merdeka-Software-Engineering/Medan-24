@@ -1,0 +1,125 @@
+
+.additional-chart .canvas-wrapper .table-container h2 {
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.additional-chart .canvas-wrapper .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+.additional-chart .canvas-wrapper .table-container th, td {
+    padding: 9.75px;
+    text-align: left;
+}
+
+.additional-chart .canvas-wrapper .table-container th {
+    background-color: #87CEEB;
+    text-align: left;
+}
+
+.additional-chart .canvas-wrapper .table-container tbody tr:nth-of-type(even) {
+    background-color: #E0FFFF;
+}
+
+.additional-chart .pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.1rem;
+}
+
+.additional-chart .pagination span {
+    margin-top: 8px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 13px;
+}
+
+.additional-chart .pagination button {
+    margin: 0 5px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #030037;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 40px;
+}
+
+.additional-chart .pagination button.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+@media (max-width: 1300px) {
+    .additional-chart .canvas-wrapper .table-container {
+        height: 34rem;
+    }
+
+    .additional-chart .canvas-wrapper .table-container table {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    .additional-chart .canvas-wrapper .table-container th,
+    .additional-chart .canvas-wrapper .table-container td {
+        padding: 60px;
+    }
+
+    .additional-chart .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .additional-chart .pagination span {
+        display: none;
+    }
+
+@media (max-width: 768px) {
+    .additional-chart .canvas-wrapper .table-container table {
+        width: 100%;
+        font-size: 12px;
+        margin-top: 30px;
+    }
+
+    .additional-chart .canvas-wrapper .table-container th,
+    .additional-chart .canvas-wrapper .table-container td {
+        padding: 6px;
+    }
+
+    .additional-chart .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .additional-chart .pagination span {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .additional-chart .canvas-wrapper .table-container table {
+        font-size: 10px; 
+            margin-top: 30px;
+    }
+
+    .additional-chart .canvas-wrapper .table-container th, td {
+        padding: 4px; 
+    }
+}
